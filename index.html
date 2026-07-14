@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>T6 · Enjambre Abismal</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="hud">
+  <div id="hud-title">
+    <h1>Enjambre Abismal</h1>
+  </div>
+  <div id="hud-stats">
+    <div class="stat-row"><span class="stat-label">Agentes:</span><span class="stat-val" id="hud-count">205</span></div>
+    <div class="stat-row"><span class="stat-label">FPS:</span><span class="stat-val" id="hud-fps">0</span></div>
+  </div>
+  <div id="hud-controls">
+    <div id="speed-row">
+      <label>Velocidad</label>
+      <input type="range" id="spd" min="0" max="4" step="0.05" value="1">
+      <span id="sval">1.00×</span>
+    </div>
+    <div id="btn-row">
+      <button class="ctrl-btn" id="btn-pause">⏸ Pausar</button>
+      <button class="ctrl-btn" id="btn-home">⌂ Cámara</button>
+      <button class="ctrl-btn" id="btn-spread">↔ Dispersar</button>
+    </div>
+  </div>
+</div>
+<script type="importmap">
+{"imports":{"three":"https://cdn.jsdelivr.net/npm/three@0.165.0/build/three.module.js","three/addons/":"https://cdn.jsdelivr.net/npm/three@0.165.0/examples/jsm/"}}
+</script>
+<script type="module" src="main.js"></script>
+</body>
+</html>
